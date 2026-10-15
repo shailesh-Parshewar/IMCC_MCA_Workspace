@@ -1,19 +1,19 @@
 # MCA Students Repository — IMCC
 
-A collaborative repository for MCA students at IMCC to maintain semester-wise coursework, homework, and programming practice while learning Git and GitHub collaboration.
+A collaborative repository for MCA students at IMCC to maintain semester-wise coursework, practice programs, homework, and academic exercises while learning Git and GitHub collaboration.
 
 ## 🎯 Purpose
 
-This repository helps students:
+This repository is intended to help students:
 
-- Maintain their academic work in an organized, shared space.
-- Practice Git and GitHub, including branching, commits, pushing, and pull requests.
-- Learn from classmates and share programming solutions.
-- Develop good collaboration habits through code review and structured contributions.
+- Maintain their coursework and programming practice in one place.
+- Learn Git and GitHub workflows, including branching, commits, pushing, and pull requests.
+- Share knowledge and learn from their classmates.
+- Develop good collaboration habits through structured contributions.
 
 ## 📁 Repository Structure
 
-The repository is organized by **semester, subject, and student**.
+Academic work is organized by semester, student, and subject.
 
 ```text
 MCA-Students-Repository/
@@ -21,116 +21,91 @@ MCA-Students-Repository/
 ├── CONTRIBUTING.md
 └── semester-1/
     ├── README.md
-    ├── Python/
-    │   ├── Shailesh-Parshewar/
-    │   └── Student-Name/
-    ├── Data-Structures-Algorithms/
-    │   ├── Shailesh-Parshewar/
-    │   └── Student-Name/
-    └── Networking-Fundamentals/
-        ├── Shailesh-Parshewar/
-        └── Student-Name/
+    ├── Shailesh-Parshewar/
+    │   ├── Python/
+    │   └── Data-Structures-Algorithms/
+    └── Other-Student/
+        ├── Python/
+        └── Data-Structures-Algorithms/
 ```
 
-The directory structure above represents the contents of the `semester-1` branch. The names shown are examples.
+The structure above illustrates the intended organization. Each student should use their own directory and keep their work inside the appropriate subject folder.
 
-### Directory rules
+### Current subjects
 
-- Each subject has its own directory.
-- Inside each subject directory, every student has a separate directory.
-- Students must store their work inside their own directory under the relevant subject.
-- A student's directory remains in the shared repository after their pull request is merged.
-- Do not create a student directory directly at the root of `semester-1`.
+- **Python**
+- **Data Structures and Algorithms**
 
-For example, Shailesh's Python work belongs in:
+Additional subjects and semesters can be added as the programme progresses.
 
-`Python/Shailesh-Parshewar/`
+## 🌿 Branching Workflow
 
-His Data Structures and Algorithms work belongs in:
+This repository uses a student-branch workflow to keep contributions organized.
 
-`Data-Structures-Algorithms/Shailesh-Parshewar/`
+1. **`main`** — Repository-wide documentation and contribution guidelines.
+2. **`semester-1`** — The shared destination branch for Semester 1 coursework.
+3. **Student branches** — Each student maintains a branch named after themselves, such as `Shailesh-Parshewar`.
+4. **Subject branches** — Students can create local subject branches to work independently on each subject.
 
-## 🌿 Branch Structure
+Subject branches are intended for local use or use within a student's own fork. They do not need to be pushed to the central repository.
 
-Branches are used to manage contributions; directories are used to organize files. These are two separate things.
-
-The repository follows this workflow:
-
-- **`main`** — Contains repository-wide documentation and contribution guidelines.
-- **`semester-1`** — The shared branch containing Semester 1 subjects and merged student contributions.
-- **Student branch** — Each student creates a branch using their own name, for example, `Shailesh-Parshewar`.
-- **Subject branches** — Students create local branches to work on individual subjects before merging their changes into their student branch.
-
-### Example branch workflow
+### Example workflow
 
 ```text
 semester-1
     │
-    └── Shailesh-Parshewar       ← Student branch
-            │
-            ├── Python           ← Local subject branch
-            ├── Data-Structures-Algorithms
-            └── Networking-Fundamentals
+    └── Shailesh-Parshewar
+            ├── Python
+            └── Data-Structures-Algorithms
 ```
 
-**Important:** Git branches are not physically nested. The diagram illustrates how branches are used in the workflow, not a literal branch hierarchy.
+The diagram represents the workflow conceptually. Git branches are not actually nested inside one another.
 
-Subject branches are intended to remain local or within the student's own fork. Students should push only their student branch for submission to the shared repository.
-
-## 🔄 Contribution Workflow
-
-Each student should follow these steps:
+A typical contribution process is:
 
 1. Start from the latest `semester-1` branch.
-2. Create a student branch using their name.
-3. Create a local subject branch from their student branch.
-4. Add or modify files inside the appropriate `Subject/Student-Name/` directory.
-5. Commit the changes on the subject branch.
-6. Merge the subject branch back into the student branch.
-7. Push only the student branch to the central repository or their own fork, as permitted.
+2. Create your student branch.
+3. Create a local subject branch for the work you want to do.
+4. Make changes inside your own student directory.
+5. Commit your work on the subject branch.
+6. Merge the subject branch into your student branch.
+7. Push **only your student branch**.
 8. Open a pull request targeting `semester-1`.
-9. Wait for review and approval before the pull request is merged.
 
-After merging, the student's work will be available in the relevant subject directory on `semester-1`. The student branch is a contribution mechanism; the student directory is where the submitted work lives.
-
-For commands and detailed rules, read [CONTRIBUTING.md](CONTRIBUTING.md).
+For detailed commands and rules, read [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 🤝 Contribution Guidelines
 
-Before contributing:
+Before contributing, please make sure you:
 
-- Read `CONTRIBUTING.md` and the `semester-1/README.md`.
-- Use your own student branch and student directory.
-- Follow the existing subject and directory names.
+- Follow the required directory structure.
+- Use your own student directory.
+- Keep files in the appropriate subject folder.
 - Write clear, meaningful commit messages.
-- Do not modify another student's work without permission.
-- Do not push directly to protected branches or bypass pull-request reviews.
-- Keep your submissions relevant to the subject.
+- Avoid modifying another student's work without permission.
+- Submit changes through a pull request rather than directly modifying protected branches.
+- Follow any additional rules documented in `CONTRIBUTING.md`.
 
-Pull requests may be reviewed before being merged.
+Pull requests may be reviewed before they are merged.
 
 ## 🔒 Repository Rules
 
-Protected branches and repository permissions are intended to keep the shared coursework organized and ensure contributions are reviewed.
+Protected branches and repository permissions are intended to ensure that contributions are reviewed and the shared coursework remains organized.
 
-Having repository access does not necessarily grant permission to push to every branch. Follow the contribution workflow and the configured GitHub branch rules.
+Having access to the repository does not mean every branch can be modified directly. Follow the established contribution workflow and do not attempt to bypass branch protections.
 
-## 🚀 Getting Started
+## 📚 Getting Started
 
 1. Make sure you have access to the repository.
-2. Read this README and [CONTRIBUTING.md](CONTRIBUTING.md).
-3. Switch to `semester-1` and read its README.
-4. Create your student branch and local subject branches according to the contribution guide.
-5. Add your work to the appropriate `Subject/Student-Name/` directory.
-6. Submit your student branch through a pull request targeting `semester-1`.
+2. Read [CONTRIBUTING.md](CONTRIBUTING.md).
+3. Open the `semester-1` branch and read its `README.md`.
+4. Set up your student branch and local subject branches according to the contribution guide.
+5. Start adding your coursework in the appropriate directories.
 
 ## 💡 Remember
 
-**Branches manage your work; directories organize your submissions.**
+**One student, one student branch, one student directory.**
 
-- Student name = branch name.
-- Subject = directory at the semester level.
-- Student name inside a subject = directory containing that student's work.
-- Pull request target = `semester-1`.
+Keep subject work organized within your directory, use local subject branches to manage your work, and submit your student branch through a pull request to `semester-1`.
 
 Happy coding! 🚀
