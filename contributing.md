@@ -28,10 +28,7 @@ MCA-Students-Repository/
     ├── Python/
     │   ├── Shailesh-Parshewar/
     │   └── Student-Name/
-    ├── Data-Structures-Algorithms/
-    │   ├── Shailesh-Parshewar/
-    │   └── Student-Name/
-    └── Networking-Fundamentals/
+    └── Data-Structures-Algorithms/
         ├── Shailesh-Parshewar/
         └── Student-Name/
 ```
@@ -44,7 +41,6 @@ The tree shows the contents of the `semester-1` branch. Student names are exampl
 |---|---|
 | Python | `Python/Your-Name/` |
 | Data Structures and Algorithms | `Data-Structures-Algorithms/Your-Name/` |
-| Networking Fundamentals | `Networking-Fundamentals/Your-Name/` |
 
 Replace `Your-Name` with the name you use for your student branch.
 
@@ -52,7 +48,7 @@ Replace `Your-Name` with the name you use for your student branch.
 
 ## 3. Understanding the Branch Structure
 
-This repository uses three kinds of branches:
+This repository uses the following branches:
 
 - **`main`** — Repository-wide documentation and guidelines.
 - **`semester-1`** — The shared branch containing subjects and merged student work.
@@ -67,8 +63,7 @@ semester-1
     └── Shailesh-Parshewar       ← Student branch
             │
             ├── Python           ← Local subject branch
-            ├── Data-Structures-Algorithms
-            └── Networking-Fundamentals
+            └── Data-Structures-Algorithms
 ```
 
 This diagram represents the workflow, not a literal hierarchy. Git branches are independent references; they are not nested folders.
@@ -140,8 +135,6 @@ Then add your files inside:
 Data-Structures-Algorithms/Shailesh-Parshewar/
 ```
 
-Repeat the same process for other subjects.
-
 **Important:** Create each subject branch from your student branch, not from another subject branch. This keeps subject work separate and makes it easier to merge your contributions.
 
 If a subject directory already exists, use it rather than creating a duplicate or differently named directory.
@@ -167,7 +160,7 @@ Good examples:
 
 - `Add Python loops exercises`
 - `Implement binary search`
-- `Add networking assignment 2`
+- `Add array operations`
 - `Fix linked list traversal`
 
 Avoid vague messages such as `update`, `changes`, or `final`.
@@ -242,23 +235,6 @@ semester-1/
 
 The student directory remains in the shared semester branch even after the student branch is no longer needed.
 
-### ⚠️ Do Not Delete Your Student Branch
-
-**Your student branch is meant to be reused for future contributions. Do not delete it after your pull request has been merged.**
-
-You will continue using the same student branch for future assignments, practicals, and coursework. Each time you have new work to contribute:
-
-1. Update your local `semester-1` branch with the latest changes.
-2. Update your student branch with the latest `semester-1` changes.
-3. Create a new local subject branch for your next task, or reuse an existing one if appropriate.
-4. Commit your work and merge the subject branch back into your student branch.
-5. Push your student branch and open another pull request targeting `semester-1`.
-
-The student branch is your ongoing contribution branch, not a temporary branch for a single pull request.
-
-**Remember:** Merging a pull request does not mean your student branch is no longer needed. Keep it so you can continue contributing throughout the semester.
-
-
 ## 10. Rules for Contributions
 
 Please follow these rules:
@@ -272,6 +248,24 @@ Please follow these rules:
 - Keep your work relevant to the subject and explain your code where necessary.
 - Do not force-push shared branches or attempt to bypass branch protection.
 - Follow any additional instructions from the repository maintainer or faculty.
+
+### Do Not Delete Your Student Branch
+
+**Your student branch is meant to be reused for future contributions. Do not delete it after your pull request has been merged.**
+
+You will continue using the same student branch for future assignments, practicals, and coursework.
+
+For each new contribution:
+
+1. Update your local `semester-1` branch with the latest changes.
+2. Update your student branch with the latest `semester-1` changes.
+3. Create a new local subject branch for your next task, or reuse an existing one if appropriate.
+4. Commit your work and merge the subject branch back into your student branch.
+5. Push your student branch and open another pull request targeting `semester-1`.
+
+The student branch is your ongoing contribution branch, not a temporary branch for a single pull request.
+
+You may delete temporary subject branches after merging their work into your student branch if you no longer need them.
 
 ## 11. Common Mistakes to Avoid
 
